@@ -1,0 +1,142 @@
+* { 
+	box-sizing: border-box;
+}
+/* border: 3px solid #000000; */
+
+
+/* HEX: #bccad6
+
+HEX: #8d9db6
+
+HEX: #667292
+
+HEX: #f1e3dd
+
+HEX: #cfe0e8
+
+HEX: #b7d7e8
+
+HEX: #87bdd8
+
+HEX: #daebe8 */
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #667292;
+}
+
+header {
+	font-size: x-large;
+	text-align: center;
+	background-color: #bccad6;
+	color: #000000;
+	padding: 20px;
+	font-family: Helvetica, sans-serif;
+	margin-bottom: 50px;
+}
+
+footer {
+	text-align: center;
+	background-color: #555;
+	color: #ddd;
+	padding: 5px;
+	margin-top: 50px;
+}
+p{
+	font-size: large;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-family: Helvetica, sans-serif;
+}
+p.mainpara{
+	color:#000000;
+}
+#text {
+	font-size: x-large;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	padding: 5px;
+	font-family: Verdana ,Georgia, Helvetica, sans-serif;
+}
+
+
+/*  */
+/* .title{
+	font-size: x-large;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	padding: 5px;
+	font-family: Verdana ,Georgia, Helvetica, sans-serif;
+} */
+
+/* img{
+	width: 500;
+	height: 600;
+} */
+
+div.frame1{
+	/* Rectangle 1 */
+/* position: absolute; */
+margin: auto;
+width: 749px;
+height: 223px;
+background: #A6BEEB;
+display: flex; 
+justify-content:space-between;
+align-items: center;
+padding-left: 20px;
+padding-right: 20px;
+}
+div.frame2{
+	/* Rectangle 1 */
+/* position: absolute; */
+margin: auto;
+width: 549px;
+height: 223px;
+background: #A6BEEB;
+display: flex; 
+justify-content:space-between;
+align-items: center;
+padding-left: 20px;
+padding-right: 20px;
+}
+div.cir1{
+	/* position: absolute; */
+width: 50px;
+height: 50px;
+border-radius: 25px;
+background: #BD5F5F;
+text-align: center;
+border-top: 25px;
+color: #fff;
+}
+div.cir1:hover {
+  background-color: #54849e;
+}
+
+div.cir150{
+	/* position: absolute; */
+width: 150px;
+height: 150px;
+border-radius: 75px;
+background: #BD5F5F;
+text-align: center;
+/* border-top: 50px; */
+padding-top: 50px;
+color: #fff;
+}
+div.cir150:hover {
+  background-color: #54849e;
+}
+
+
+
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  height: 150px;
+}
