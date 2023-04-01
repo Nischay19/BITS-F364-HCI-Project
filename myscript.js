@@ -21,6 +21,7 @@ function A1_done(){
 }
 
 
+
 //FRAME A2
 var lastClick2 = 0;
 var mt12 = 0; 
@@ -38,10 +39,13 @@ function A2_done(){
   document.getElementById('Mtime12').innerHTML = "The Movement Time 2 (MT2): "+ mt12 +" milliseconds";
 }
 
+//RATIO 1
 function ratio1(){
   var ratio = mt11/mt12;
   document.getElementById('Ratio1').innerHTML = "___"+ratio.toFixed(2)+"___";
 }
+
+
 
 
 
@@ -66,7 +70,6 @@ function B1_done(){
 
 
 
-
 //FRAME B2
 var lastClick4 = 0;
 var mt22 = 0; 
@@ -85,11 +88,11 @@ function B2_done(){
 }
 
 
+//RATIO 2
 function ratio2(){
   var ratio = mt21/mt22;
   document.getElementById('Ratio2').innerHTML = "___"+ratio.toFixed(2)+"___";
 }
 
-//
 
-
+// END

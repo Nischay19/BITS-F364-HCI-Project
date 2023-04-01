@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="myscript.js"></script>
-
   
   <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script>
@@ -41,13 +39,6 @@
 
 
 
-
-
-
-
-
-
-  
   <body>
     <header>
       <p class="mainpara">
@@ -58,11 +49,12 @@
     </header>
 
     <p>
-        Description of the project<br><br>
-         1. The 2 Frames given below have different click orders and measure different times
-          for finishing the click order.<br>
+        <b>Description of the project</b><br><br>
+         1. The 2 Experiments given below is used to demonstrate the relation between the<br> 
+          Movement Time and the Distance bw the objects <br>and the Width of the object
+          respectively<br>
          2. Each ordered click in any frame has a defined distance between the two clicks.<br>
-         3. The distance between the avg 2 clicks is different for the two frames.<br>
+         3. The distance between the avg 2 clicks is different for the 2 frames in any Experiment.<br>
          4. Due to the difference in distances of clicks
           we will get non equal Movement Time(MT) for the two frames<br>
           ,thus depicting an application of Fitt's Law.,<br><br>
@@ -81,7 +73,7 @@
     
     <p> 
         To find out the relation between The Movement Time and Distance of two objects.<br>
-        Follow the order and click on the circles of each of the Frame<br> 
+        To do: Follow the order and click on the circles of each of the Frame<br> 
         The movement time between each of the clicks will be calculated and displayed<br> 
     </p>
 
@@ -102,8 +94,8 @@
 
 
 
-  <p>Click the red buttons in order with no pause of distraction(to reduce error)<br>
-    Distance between the two circles (D1) 749-20-20-50px = 659px : 174.3mm</p>
+  <p><b>Click the red buttons in order with no pause of distraction(to reduce error)</b><br>
+    Distance between the two circles (D1) 949-20-20-50px = 859px : 227.2mm</p>
 
   <div class ="frame1">
 
@@ -130,8 +122,8 @@
   <div id="text"> 
       Frame A.2<br> 
   </div>
-  <p>Click the red buttons in order with no pause of distraction(to reduce error)<br>
-    Distance between the two circles (D2) 549-20-20-50px = 459px : 121.4mm</p>
+  <p><b></b>Click the red buttons in order with no pause of distraction(to reduce error)</b><br>
+    Distance between the two circles (D2) 349-20-20-50px = 259px : 68.5mm</p>
 
   <div class ="frame2">
 
@@ -160,7 +152,7 @@
   <p>According to Fitt's Law<br>
     RHS = a + b*log((2*D) / W)      //neglecting a as ~ 0 <br><br>
     The ratio of RHS =>   RHS1 / RHS2 ~ log(2*D1 / W1) / log(2*D2 / W2)<br>
-    RHS ratio     ~ 1.42/1.26 ~ <b><u><i>1.12</i></u></b><br><br>
+    RHS ratio     ~ 1.53/1.02 ~ <b><u><i>1.5</i></u></b><br><br>
 
     The ratio of LHS = MT1 / MT2<br>
     LHS ratio   = <button name="button" type="button" onclick="ratio1()">find</button>  
@@ -175,17 +167,11 @@
   <br>
   <hr>
 
-    
 
 
+  
 
-
-
-
-
-
-
-<br><br>
+  <br><br>
   <div id="text">Experiment B:</div>
   <p> 
       To find out the relation between The Movement Time and width of the 2 objects.<br>
@@ -199,95 +185,89 @@
   <p>
     Constants<br>
     1) The a and b remain same for both frames and are neglected<br>
-    2) The distance between the two circle's :  659px : 174.3 millimeter<br>
-    D (Distance between the targets) : 174.3 millimeter<br>
+    2) The distance between the two circle's :  859px : 227.2 millimeter<br>
+    D (Distance between the targets) : 227.2 millimeter<br>
     D will remain same for both the Frames . D = D1 = D2
   </p>
 
   <div id="text"> 
     Frame B.1<br> 
-</div>
-<p>Click the red buttons in order with no pause of distraction(to reduce error)<br>
-  Width of the two circles (W1) = 50px : 13.2mm</p>
+  </div>
+  <p><b>Click the red buttons in order with no pause of distraction(to reduce error)</b><br>
+    Width of the two circles (W1) = 50px : 13.2mm</p>
 
-<div class ="frame1">
+  <div class ="frame1">
 
-  <div onclick="B1_start()"
-  class = "cir1">            <!-- //width 50px -->
-    <p>1</p>
+    <div onclick="B1_start()"
+        class = "cir1">            <!-- //width 50px -->
+      <p>1</p>
+    </div>
+
+    <div class = "cir1"
+        onclick="B1_done()">
+      <p>2</p>
+    </div>
+
   </div>
 
-  <div class = "cir1"
-  onclick="B1_done()">
-    <p>2</p>
-  </div>
-
-</div>
-
-<p id="Mtime21">
-  <!-- Will display:  The Movement Time 1(MT1): ____________ milliseconds -->
-</p>
+  <p id="Mtime21">
+    <!-- Will display:  The Movement Time 1(MT1): ____________ milliseconds -->
+  </p>
 
 
 
-<div id="text"> 
-    Frame B.2<br> 
-</div>
-<p>Click the red buttons in order with no pause of distraction(to reduce error)<br>
-  Width of the two circles (W1) = 150px : 39.6mm</p>
+    <div id="text"> 
+        Frame B.2<br> 
+    </div>
+    <p><b>Click the red buttons in order with no pause of distraction(to reduce error)</b><br>
+      Width of the two circles (W2) = 150px : 39.6mm</p>
 
-<div class ="frame1">
+    <div class ="frame1">
 
-  <div class = "cir150"
-  onclick="B2_start()">
-    <p>1</p>
-  </div>
-  
-  <div class = "cir150"
-  onclick="B2_done()">
-    <p>2</p>
-  </div>
+      <div class = "cir150"
+      onclick="B2_start()">
+        <p>1</p>
+      </div>
+      
+      <div class = "cir150"
+      onclick="B2_done()">
+        <p>2</p>
+      </div>
 
-</div>
+    </div>
 
-<p id="Mtime22">
-  <!-- Will display:  The Movement Time 1(MT1): ____________ milliseconds -->
-</p>
+    <p id="Mtime22">
+      <!-- Will display:  The Movement Time 1(MT1): ____________ milliseconds -->
+    </p>
 
-<div id="text">
-  <br>Observations
-</div>
-<p>According to Fitt's Law<br>
-  RHS = a + b*log((2*D) / W)      //neglecting a as ~ 0 <br><br>
-  The ratio of RHS =>   RHS1 / RHS2 ~ log( 2*D / W1) / log( 2*D / W2)<br>
-  RHS ratio    ~ 1.42/0.94 ~ <b><u><i>1.51</i></u></b><br><br>
+    <div id="text">
+      <br>Observations
+    </div>
+    <p>According to Fitt's Law<br>
+      RHS = a + b*log((2*D) / W)      //neglecting a as ~ 0 <br><br>
+      The ratio of RHS =>   RHS1 / RHS2 ~ log( 2*D / W1) / log( 2*D / W2)<br>
+      RHS ratio    ~ 1.53/1.06 ~ <b><u><i>1.44</i></u></b><br><br>
 
-  The ratio of LHS = MT1 / MT2<br>
-  LHS ratio   = <button name="button" type="button" onclick="ratio2()">find</button>  
-  <i><b><u id = "Ratio2"></u></b></i>.
+      The ratio of LHS = MT1 / MT2<br>
+      LHS ratio   = <button name="button" type="button" onclick="ratio2()">find</button>  
+      <i><b><u id = "Ratio2"></u></b></i>.
 
-</p>
-<div id="text">Conclusion</div>
-<p>We can conclude that as the <b>LHS ratio ~ RHS ratio</b>, and both > 1<br>
-  the Movement Time is directly proportional to Distance between the two objects
-  <br> Thus the Fitt's Law holds correct</p>
-<br>
-<br>
+    </p>
+    <div id="text">Conclusion</div>
+    <p>We can conclude that as the <b>LHS ratio ~ RHS ratio</b>, and both > 1<br>
+      the Movement Time is directly proportional to Distance between the two objects
+      <br> Thus the Fitt's Law holds correct
+    </p>
+    <br>
+    <br>
 
-
-
-<hr>
-
-       <p>
+    <hr>
+      <p>
         <a href="https://github.com/Nischay19/BITS-F364-HCI-Project">link to SOURCE CODE(GITHUB)</a> <br><br>
         <a href="https://docs.google.com/document/d/1PisN140kb8pYc1boDvUZVwSM2ehbMYhUpxGLkEjx5j4/edit">link to FINAL COURSE PROJECT REPORT</a> <br> 
-       </p>  
-
-       <p>
-
+      </p>  
+      <p>
         Made by Nischay Khandelwal || 2020A7PS0101P
-       </p>
-
+      </p>
   </body>
-
 </html>

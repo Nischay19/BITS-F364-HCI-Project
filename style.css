@@ -1,25 +1,6 @@
 * { 
 	box-sizing: border-box;
 }
-/* border: 3px solid #000000; */
-
-
-/* HEX: #bccad6
-
-HEX: #8d9db6
-
-HEX: #667292
-
-HEX: #f1e3dd
-
-HEX: #cfe0e8
-
-HEX: #b7d7e8
-
-HEX: #87bdd8
-
-HEX: #daebe8 */
-
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
@@ -43,15 +24,18 @@ footer {
 	padding: 5px;
 	margin-top: 50px;
 }
+
 p{
 	font-size: large;
 	text-align: center;
 	color: rgb(255, 255, 255);
 	font-family: Helvetica, sans-serif;
 }
+
 p.mainpara{
 	color:#000000;
 }
+
 #text {
 	font-size: x-large;
 	text-align: center;
@@ -60,26 +44,11 @@ p.mainpara{
 	font-family: Verdana ,Georgia, Helvetica, sans-serif;
 }
 
-
-/*  */
-/* .title{
-	font-size: x-large;
-	text-align: center;
-	color: rgb(255, 255, 255);
-	padding: 5px;
-	font-family: Verdana ,Georgia, Helvetica, sans-serif;
-} */
-
-/* img{
-	width: 500;
-	height: 600;
-} */
-
 div.frame1{
 	/* Rectangle 1 */
 /* position: absolute; */
 margin: auto;
-width: 749px;
+width: 949px;
 height: 223px;
 background: #A6BEEB;
 display: flex; 
@@ -88,11 +57,12 @@ align-items: center;
 padding-left: 20px;
 padding-right: 20px;
 }
+
 div.frame2{
 	/* Rectangle 1 */
 /* position: absolute; */
 margin: auto;
-width: 549px;
+width: 349px;
 height: 223px;
 background: #A6BEEB;
 display: flex; 
@@ -101,6 +71,7 @@ align-items: center;
 padding-left: 20px;
 padding-right: 20px;
 }
+
 div.cir1{
 	/* position: absolute; */
 width: 50px;
@@ -111,6 +82,7 @@ text-align: center;
 border-top: 25px;
 color: #fff;
 }
+
 div.cir1:hover {
   background-color: #54849e;
 }
@@ -126,12 +98,10 @@ text-align: center;
 padding-top: 50px;
 color: #fff;
 }
+
 div.cir150:hover {
   background-color: #54849e;
 }
-
-
-
 
 img {
   border: 1px solid #ddd;
@@ -140,3 +110,5 @@ img {
   width: 300px;
   height: 150px;
 }
+
+/* END */
